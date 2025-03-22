@@ -69,7 +69,7 @@
 
 /* HOME */
 
-.bg-home {
+.bg-app {
   background: linear-gradient(120deg, var(--base-color) 44.9%, var(--color-blue) 45%) no-repeat fixed;
 }
 
@@ -99,4 +99,24 @@ header {
 .btn-default:hover {
   background-color: var(--color-blue);
   color: var(--base-color);
+}
+
+.btn-float {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  font-size: 35px;
+  padding: 0;
+  color: var(--base-color);
+  background-color: var(--color-purple);
+  border: 2px solid var(--color-purple);
+}
+
+.btn-float:hover {
+  border: 2px solid var(--color-blue);
+  background-color: var(--base-color);
+  color: var(--color-blue);
 }
