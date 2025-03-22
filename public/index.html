@@ -43,18 +43,18 @@
                 <form id="login-form">
                   <div class="mb-3">
                     <label for="email-input" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email-input" aria-describedby="email-help">
+                    <input type="email" class="form-control" id="email-input" aria-describedby="email-help" required>
                     <div id="email-help" class="form-text">Utilize seu e-mail para realizar o login.</div>
                   </div>
                   <div class="mb-3">
                     <label for="password-input" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="password-input">
+                    <input type="password" class="form-control" id="password-input" required>
                   </div>
                   <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="check-input">
                     <label class="form-check-label" for="check-input">Permanecer logado.</label>
                   </div>
-                  <button type="submit" class="btn btn-login">Entrar</button>
+                  <button type="submit" class="btn btn-default btn-login">Entrar</button>
                 </form>
               </div>
             </div>
@@ -63,8 +63,7 @@
               <div class="col">
                 <div>
                   <p class="form-text text-center mt-2">
-                    Ainda não tem conta? 
-                    <span class="link-default" data-bs-toggle="modal" data-bs-target="#register-modal">Criar uma conta.</span>
+                    Ainda não tem conta? <span class="link-default" data-bs-toggle="modal" data-bs-target="#register-modal">Criar uma conta.</span>
                   </p>
                 </div>
               </div>
