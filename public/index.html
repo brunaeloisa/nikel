@@ -40,7 +40,7 @@
             
             <div class="row">
               <div class="col">
-                <form action="./home.html">
+                <form id="login-form">
                   <div class="mb-3">
                     <label for="email-input" class="form-label">E-mail</label>
                     <input type="email" class="form-control" id="email-input" aria-describedby="email-help">
@@ -64,7 +64,7 @@
                 <div>
                   <p class="form-text text-center mt-2">
                     Ainda não tem conta? 
-                    <span class="link-default">Criar uma conta.</span>
+                    <span class="link-default" data-bs-toggle="modal" data-bs-target="#register-modal">Criar uma conta.</span>
                   </p>
                 </div>
               </div>
@@ -89,7 +89,39 @@
         </div>
       </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="register-modal" tabindex="-1" aria-labelledby="register-modal-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="register-modal-label">Crie sua conta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form id="register-form">
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="register-email-input" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="register-email-input" aria-describedby="register-email-help">
+                <div id="register-email-help" class="form-text">Utilize seu e-mail para criar a conta.</div>
+              </div>
+              <div class="mb-3">
+                <label for="register-password-input" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="register-password-input" aria-describedby="register-password-help">
+                <div id="register-password-help" class="form-text">Utilize uma senha fácil e anote para não esquecer.</div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancelar</button>
+              <button type="submit" class="btn btn-default">Criar conta</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>

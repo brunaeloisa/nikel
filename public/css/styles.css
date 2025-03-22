@@ -56,6 +56,17 @@
   color: var(--color-blue);
 }
 
+.btn-cancel {
+  border-radius: 10px;
+  background-color: #808080;
+  color: var(--base-color);
+}
+
+.btn-cancel:hover {
+  background-color: #5a5a5a;
+  color: var(--base-color);
+}
+
 /* HOME */
 
 .bg-home {
