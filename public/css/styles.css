@@ -12,6 +12,10 @@
   color: var(--color-blue);
 }
 
+.btn:focus {
+  box-shadow: none;
+}
+
 /* LOGIN */
 
 .bg-login {
