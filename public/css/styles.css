@@ -1,9 +1,25 @@
+:root {
+  --base-color: #ffffff;
+  --color-purple: #4e0070;
+  --color-blue: #4c79d3;
+}
+
+.primary-color {
+  color: var(--color-purple);
+}
+
+.secondary-color {
+  color: var(--color-blue);
+}
+
+/* LOGIN */
+
 .bg-login {
-  background: linear-gradient(120deg, #4c79d3 44.9%, #ffffff 45%) no-repeat fixed;
+  background: linear-gradient(120deg, var(--color-blue) 44.9%, var(--base-color) 45%) no-repeat fixed;
 }
 
 .text-login {
-  color: #ffffff;
+  color: var(--base-color);
   font-size: 1.125rem;
   font-weight: 500;
 }
@@ -13,25 +29,59 @@
   bottom: -70px;
 }
 
-.btn.btn-login {
+.btn-login {
   border-radius: 10px;
-  background-color: #4e0070;
-  color: #ffffff;
+  background-color: var(--color-purple);
+  color: var(--base-color);
   width: 50%;
   margin: 0 25%;
 }
 
-.btn.btn-login:hover {
-  background-color: #4c79d3;
-  color: #ffffff;
+.btn-login:hover {
+  background-color: var(--color-blue);
+  color: var(--base-color);
 }
 
 .link-default {
-  color: #4e0070;
+  color: var(--color-purple);
   cursor: pointer;
   text-decoration: none;
 }
 
 .link-default:hover {
-  color: #4c79d3;
+  color: var(--color-blue);
+}
+
+/* HOME */
+
+.bg-home {
+  background: linear-gradient(120deg, var(--base-color) 44.9%, var(--color-blue) 45%) no-repeat fixed;
+}
+
+header {
+  border-bottom: 1px solid #bebcbc;
+  padding: 5px;
+  background-color: var(--base-color);
+}
+
+.icon-detail {
+  font-size: 3.125rem;
+  margin-right: .625rem;
+}
+
+.info {
+  background-color: var(--base-color);
+  border-radius: 20px 20px 0 0;
+  padding: 20px 0 0;
+}
+
+.btn-default {
+  border-radius: 10px;
+  background-color: var(--color-purple);
+  color: var(--base-color);
+}
+
+.btn-default:hover {
+  background-color: var(--color-blue);
+  color: var(--base-color);
 }
