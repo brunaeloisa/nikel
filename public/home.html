@@ -18,9 +18,9 @@
 <body class="bg-app">
   <header>
     <nav class="navbar navbar-expand navbar-light bg-white">
-      <div class="container">
+      <div class="container-lg">
         <a class="navbar-brand" href="#">
-          <img src="./assets/images/nikel-small-logo.png" alt="Logo Nikel">
+          <img class="img-fluid" src="./assets/images/nikel-small-logo.png" alt="Logo Nikel">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -53,7 +53,7 @@
       <div class="row">
         <div class="col mt-4 d-flex justify-content-start align-items-center">
           <i class="bi bi-cash-coin primary-color icon-detail"></i>
-          <span class="fs-2">R$ 3.288,00</span>
+          <span id="total" class="fs-2">R$ 0,00</span>
         </div>
         <div class="col mt-4 text-end">
           <img src="./assets/images/coins-small.png" alt="Imagem de moedas">
@@ -62,7 +62,7 @@
 
       <div class="row">
         <div class="col-12 shadow-lg info">
-          <div class="container">
+          <div class="container-fluid">
             <div class="row">
               <div class="col-6">
                 <span class="fs-4 align-middle">Entradas</span>
@@ -72,31 +72,19 @@
                 <span class="fs-4 align-middle">Saídas</span>
                 <i class="bi bi-arrow-up-circle fs-2 align-middle"></i>
               </div>
-              <div class="col-12">
+              <div class="col-12 my-2">
                 <hr>
               </div>
             </div>
             <div class="row">
               <div class="col-6">
-                <div class="container px-0">
-                  <div class="row">
-                    <div class="col">
-                      R$ 1000,00
-                    </div>
-                  </div>
-                </div>
+                <div id="cash-in-list" class="container p-0"></div>
               </div>
               <div class="col-6">
-                <div class="container px-0">
-                  <div class="row">
-                    <div class="col">
-                      R$ 500,00
-                    </div>
-                  </div>
-                </div>
+                <div id="cash-out-list" class="container p-0"></div>
               </div>
-              <div class="col-12 my-4">
-                <button class="btn btn-default" type="button">Ver todas</button>
+              <div class="col-12 mb-4">
+                <button id="transactions-button" class="btn btn-default" type="button">Ver todas</button>
               </div>
             </div>
           </div>
@@ -118,7 +106,7 @@
               <div class="modal-body">
                 <div class="mb-3">
                   <label for="value-input" class="form-label">Valor</label>
-                  <input type="number" class="form-control" id="value-input" required>
+                  <input type="number" class="form-control" id="value-input" step="any" min="0.01" required>
                 </div>
                 <div class="mb-3">
                   <label for="description-input" class="form-label">Descrição</label>
