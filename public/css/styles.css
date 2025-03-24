@@ -12,8 +12,26 @@
   color: var(--color-blue);
 }
 
-.btn:focus {
-  box-shadow: none;
+.btn-default {
+  border-radius: 10px;
+  background-color: var(--color-purple);
+  color: var(--base-color);
+}
+
+.btn-default:hover {
+  background-color: var(--color-blue);
+  color: var(--base-color);
+}
+
+.btn-cancel {
+  border-radius: 10px;
+  background-color: #808080;
+  color: var(--base-color);
+}
+
+.btn-cancel:hover {
+  background-color: #5a5a5a;
+  color: var(--base-color);
 }
 
 /* LOGIN */
@@ -48,18 +66,7 @@
   color: var(--color-blue);
 }
 
-.btn-cancel {
-  border-radius: 10px;
-  background-color: #808080;
-  color: var(--base-color);
-}
-
-.btn-cancel:hover {
-  background-color: #5a5a5a;
-  color: var(--base-color);
-}
-
-/* HOME */
+/* APP */
 
 .bg-app {
   background: linear-gradient(120deg, var(--base-color) 44.9%, var(--color-blue) 45%) no-repeat fixed;
@@ -71,6 +78,10 @@ header {
   background-color: var(--base-color);
 }
 
+.log-out {
+  min-width: 5rem;
+}
+
 .icon-detail {
   font-size: 3.125rem;
   margin-right: .625rem;
@@ -80,17 +91,6 @@ header {
   background-color: var(--base-color);
   border-radius: 20px 20px 0 0;
   padding: 20px 0 0;
-}
-
-.btn-default {
-  border-radius: 10px;
-  background-color: var(--color-purple);
-  color: var(--base-color);
-}
-
-.btn-default:hover {
-  background-color: var(--color-blue);
-  color: var(--base-color);
 }
 
 .btn-float {
@@ -113,6 +113,14 @@ header {
   color: var(--color-blue);
 }
 
-.log-out {
-  min-width: 5rem;
+.trash {
+  background-color: transparent;
+  border: none;
+  color: var(--color-blue);
+  transition: color .2s;
+  padding: 0;
+}
+
+.trash:hover {
+  color: #d30000;
 }
